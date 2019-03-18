@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntlrStudio", "AntlrStudio\AntlrStudio.csproj", "{E2413813-D95E-4EC4-9FBF-D411A23219FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{E04E81D9-0C0C-4071-ACFE-DAC680C1435C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{98D405CE-E186-4F40-A4A0-E343B86F09E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E2413813-D95E-4EC4-9FBF-D411A23219FB} = {E2413813-D95E-4EC4-9FBF-D411A23219FB}
+		{E04E81D9-0C0C-4071-ACFE-DAC680C1435C} = {E04E81D9-0C0C-4071-ACFE-DAC680C1435C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,14 @@ Global
 		{E2413813-D95E-4EC4-9FBF-D411A23219FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2413813-D95E-4EC4-9FBF-D411A23219FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2413813-D95E-4EC4-9FBF-D411A23219FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04E81D9-0C0C-4071-ACFE-DAC680C1435C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04E81D9-0C0C-4071-ACFE-DAC680C1435C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04E81D9-0C0C-4071-ACFE-DAC680C1435C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04E81D9-0C0C-4071-ACFE-DAC680C1435C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D405CE-E186-4F40-A4A0-E343B86F09E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D405CE-E186-4F40-A4A0-E343B86F09E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D405CE-E186-4F40-A4A0-E343B86F09E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D405CE-E186-4F40-A4A0-E343B86F09E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

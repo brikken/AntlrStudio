@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:AntlrStudio"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left">
+            <Button Name="btnGetRules" Click="btnGetRules_Click">Get rules</Button>
+        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Name="txtCode"/>
+            <TextBox Grid.Row="1" Name="txtOutput"/>
+        </Grid>
+    </DockPanel>
 </Window>
